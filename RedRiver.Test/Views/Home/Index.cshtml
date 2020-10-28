@@ -1,0 +1,52 @@
+﻿@model List<RedRiver.Test.Models.Drinks>
+@{
+    ViewData["Title"] = "Red River Test";
+}
+
+<div class="container">
+    <h2>Please select a hot drink from the choices below.</h2>
+    <div class="row">
+        @foreach (var drink in Model)
+        {
+        <div class="col-md-12 drink">
+
+            <div class="col-md-4 float-left">
+                <img class="drink-pics" src="@drink.Url" />
+            </div>
+
+            <div class="col-md-4 float-left">
+                <h2 class="title-@drink.Id">@drink.Name</h2>
+                <p>@drink.Description</p>
+            </div>
+
+            <div class="col-md-4 float-left">
+                <button id="@drink.Id" class="btn btn-success btn-select drink-btn" data-toggle="modal" data-target="#drinks-modal">Select <b>&gt;</b></button>
+            </div>
+
+            @foreach (var step in drink.Recipe)
+            {
+                <input type="hidden" name="test" class="drink-@drink.Id" value="@step" />
+            }
+
+        </div>
+        }
+    </div>
+</div>
+
+<div class="modal fade" id="drinks-modal" tabindex="-1" role="dialog" aria-labelledby="my-modal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">My Modal</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" id="steps-modal">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

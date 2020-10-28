@@ -1,0 +1,37 @@
+[
+  {
+    "Id": 1,
+    "Name": "Lemon Tea",
+    "Url": "lemon-tea.png",
+    "Description": "Lemon tea is prepared using black tea or green tea and by adding the right amount of lemon juice to it. When you add lemon juice to your tea, it changes the colour of tea. This effect is known as the bathochromic shift, and it also changes the taste of the tea. This unique taste makes it a wonderful cup to drink",
+    "Recipe": [
+      "boil some water",
+      "Steep the water in the tea",
+      "Pour tea in cup",
+      "Add lemon"
+    ]
+  },
+  {
+    "Id": 2,
+    "Name": "Coffee",
+    "Url": "coffee.jpg",
+    "Description": "Coffee is a brewed drink prepared from roasted coffee beans, the seeds of berries from certain Coffea species. When coffee berries turn from green to bright red in color, indicating ripeness, they are picked, processed, and dried",
+    "Recipe": [
+      "boil some water",
+      "Brew the coffee grounds",
+      "Pour coffee in cup",
+      "Add sugar and milk"
+    ]
+  },
+  {
+    "Id": 3,
+    "Name": "Chocolate",
+    "Url": "chocolate.png",
+    "Description": "Hot chocolate, also known as drinking chocolate, cocoa, and as chocolate tea in Nigeria, is a heated drink consisting of shaved chocolate, melted chocolate or cocoa powder, heated milk or water, and usually a sweetener. Hot chocolate may be topped with whipped cream or marshmallows.",
+    "Recipe": [
+      "boil some water",
+      "Add chocolate powder to water",
+      "Pour chocolate in cup"
+    ]
+  }
+]
